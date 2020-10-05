@@ -36,17 +36,17 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/login">
+          <Route path="/login/">
             <Login></Login>
           </Route>
           
-          <PrivateRoute path="/registration">
+          <PrivateRoute path="/registration/">
             <Registration></Registration>
           </PrivateRoute>
-          <Route path="/appliedTasks">
+          <Route path="/appliedTasks/">
             <AppliedTasks/>
           </Route>
-          <Route path="/adminArea">
+          <Route path="/adminArea/">
             <Admin></Admin>
           </Route>
         </Switch>

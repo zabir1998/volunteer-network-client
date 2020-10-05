@@ -14,6 +14,7 @@ import Grid from "@material-ui/core/Grid";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
 import "./Login.css";
+import Header from "../Header/Header";
 
 const socialStyles = makeStyles((theme) => ({
   root: {
@@ -81,6 +82,7 @@ const Login = () => {
   };
   return (
     <div>
+      <Header></Header>
       <Container className="loginContainer" component="main" maxWidth="xs">
         <CssBaseline />
         <div className={classes.paper}>

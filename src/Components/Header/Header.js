@@ -20,12 +20,15 @@ const Header = () => {
     return (
         <div>
             <Navbar bg="light" variant="light">
-    <Navbar.Brand href="#home">  <img
+              <Link to="/home">
+              <Navbar.Brand href="#home">  <img
               className="logo"
               src={logo}
               alt="volunteer-network"
               srcSet=""
             /></Navbar.Brand>
+              </Link>
+    
     <Nav className="mr-auto">
       <Nav.Link href="#home">Home</Nav.Link>
       <Nav.Link href="#donations">Donations</Nav.Link>

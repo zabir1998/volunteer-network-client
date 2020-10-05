@@ -132,7 +132,7 @@ const Home = () => {
     
     return (
         
-        <div className="home">
+        <div id="home"className="home">
             <Header></Header><br/>
             <Link to={"/registration/"}>
             <div className="row">
