@@ -1,10 +1,11 @@
 import { Button, FormControl } from '@material-ui/core';
-import React from 'react';
+import React, { useContext } from 'react';
 import { Form, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../resources/icons/logo.png';
 import './Header.css';
 import { makeStyles } from '@material-ui/core/styles';
+import { UserContext } from '../../App';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -16,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Header = () => {
+  const[loggedInUser, setLoggedInUser]= useContext(UserContext)
   const classes = useStyles();
     return (
         <div>
@@ -48,6 +50,7 @@ const Header = () => {
         Admin
       </Button>
       </Link>
+      <p style={{fontWeight:'bold',fontSize:'25px',paddingTop:'0px',margin:'2px'}}>{loggedInUser.name}</p>
     </Form>
   </Navbar>
         </div>
